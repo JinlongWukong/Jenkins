@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
-        sh 'echo Hello World'
+        sh 'echo Hello World test1'
       }
       post {
         success {
           script {
-            currentBuild.result = 'FAILURE'
+            currentBuild.result = 'SUCCESS'
           }
         }
       }
