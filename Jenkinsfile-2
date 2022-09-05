@@ -3,7 +3,7 @@ pipeline {
         docker { image 'node:16.13.1-alpine' }
     }
     environment {
-        PATH="/usr/local/bin:${env.PATH}
+        PATH="/usr/local/bin:${env.PATH}"
     }
     stages {
         stage('Test') {
